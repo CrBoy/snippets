@@ -139,9 +139,9 @@ snippet class
 	class ${1:ClassName}
 	{
 		${2}
-		function ${3:__construct}(${4:argument})
+		${3:public }function ${4:__construct}(${5:argument})
 		{
-			${5:parent::__construct();}${6}
+			${6:parent::__construct();}${7}
 		}
 	}
 snippet interface
@@ -217,6 +217,8 @@ snippet fun
 	{
 		${4:// code...}
 	}
+snippet fund
+	${1:public }function ${2:FunctionName}(${3});${4}
 # $... = array (...)
 snippet array
 	$${1:arrayName} = array('${2}' => ${3});${4}
